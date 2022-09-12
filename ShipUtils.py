@@ -43,7 +43,8 @@ class ShipDataset:
         cat = self.df.category_name[index]
         cat_id = self.df.category_id[index]
         file_name = self.df.file_name[index]
-        img_path = glob(f'./train/train/*/{self.df.file_name[index]}')[0] # bypass folders
+        img_path = glob(f'../input/sapienza-training-camp-2022/train/train/*/{self.df.file_name[index]}')[0] # bypass folders
+        
   
         with open(img_path, "rb") as fp:
             img = Image.open(img_path).convert("RGB")
@@ -189,7 +190,7 @@ def plot_confusionmatrix(category_names, model, val_loader):
 
 def test(model, train_transform, path):
 
-    test_dataset = ImageFolder("./test/", transform=train_transform)
+    test_dataset = ImageFolder("../input/sapienza-training-camp-2022/test/", transform=train_transform)
 
     test_loader = torch.utils.data.DataLoader(test_dataset, 
                                               batch_size=batch_size,
