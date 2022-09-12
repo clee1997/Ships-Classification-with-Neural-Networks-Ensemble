@@ -138,7 +138,6 @@ def train(train_loader, val_loader, path):
 
   model = ViT('B_16_imagenet1k', pretrained=True)
   model.fc.out_features = 2
-  model.to(device)
   
   cost = torch.nn.CrossEntropyLoss()
 
@@ -147,7 +146,7 @@ def train(train_loader, val_loader, path):
   lambda1 = lambda epoch: 0.65 ** epoch
   scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambda=lambda1)
 
-  model, train_loss, test_loss = Helper.train(model, train_loader, val_loader, epochs, optimizer, cost, scheduler)
+  model, train_loss, test_loss = Helper.train(model.to(device), train_loader, val_loader, epochs, optimizer, cost, scheduler)
 
   torch.save(model, path)
 
