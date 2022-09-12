@@ -23,6 +23,14 @@ from PIL import Image
 from pytorch_pretrained_vit import ViT
 from sklearn.metrics import confusion_matrix
 
+num_classes = 7
+batch_size = 8
+num_workers = 2
+
+# WE want exploit the GPU!
+device = "cuda"
+epochs = 10 # the number of epochs
+
 class ShipDataset:
     def __init__(self, df, transform):
         self.df = df
