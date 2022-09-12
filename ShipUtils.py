@@ -138,7 +138,7 @@ def train(train_loader, val_loader, path):
 
   model = ViT('B_16_imagenet1k', pretrained=True)
   model.fc.out_features = 2
-  # model.to(device)
+  model.to(device)
   
   cost = torch.nn.CrossEntropyLoss()
 
