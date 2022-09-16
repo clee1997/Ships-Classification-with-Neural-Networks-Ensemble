@@ -73,14 +73,14 @@ def load_df(path = './train.csv', test_size = 0.35):
     return df_train, df_val
 
 
-def get_loaders(path, transform, batch_size = 8, num_workers = 2, test_size = 0.35, input_size = (384, 384), rounds = 2):
+def get_loaders(path, transform, batch_size = 8, num_workers = 2, test_size = 0.35, input_size = (384, 384)):
 
     df_train, df_val = load_df(path=path, test_size=test_size)
 
-    train_dataset = ShipDataset(df_train[df_train.category_id == 0].reset_index(drop = True), transform=transform[0])
+    train_dataset = ShipDataset(df_train[df_train.category_id, transform=transform[0])
     val_dataset = ShipDataset(df_val, transform=transform[0])
 
-    aug = ShipDataset(df_train[df_train.category_id != 0].reset_index(drop = True), transform = transform[1])
+    aug = ShipDataset(df_train[df_train.category_id, transform = transform[1])
 
     train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size, num_workers=num_workers, shuffle=True, drop_last=True)
     val_loader = torch.utils.data.DataLoader(val_dataset, batch_size=batch_size, num_workers=num_workers, shuffle=False)
