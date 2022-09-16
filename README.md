@@ -25,13 +25,13 @@ We chose a small batch size equal to 8 in order to reduce the computational time
 ### Models
 
 | Models       | Paper           | Link  |
-| :--------------------: |:-------------:| :-----:|
-| ViT B 16     | <https://arxiv.org/abs/2010.11929> | [ViT pretrained] (https://github.com/lukemelas/PyTorch-Pretrained-ViT)|
-| Resnet152    | <https://arxiv.org/abs/1512.03385>      |  [Resnet152 PyTorch] (https://pytorch.org/vision/0.12/generated/torchvision.models.resnet152.html) |
-| ConvNeXt | <https://arxiv.org/abs/2201.03545>      |  [ConvNeXt PyTorch] (https://pytorch.org/vision/stable/models/convnext.html) |
-| ResNeXt | <https://arxiv.org/abs/1611.05431>      | [ResNeXt PyTorch] (https://pytorch.org/hub/pytorch_vision_resnext/)|
-| SE-ResNeXt | <https://arxiv.org/abs/1709.01507v4>      |   [SE-ResNeXt Timm] (https://rwightman.github.io/pytorch-image-models/models/seresnext/) |
-| Xception | <https://arxiv.org/abs/1610.02357>      |  [Xception Timm] (https://rwightman.github.io/pytorch-image-models/models/xception/) |
+| :--------------------------: |:-------------:| :-----:|
+| ViT B 16     | <https://arxiv.org/abs/2010.11929> |https://github.com/lukemelas/PyTorch-Pretrained-ViT|
+| Resnet152    | <https://arxiv.org/abs/1512.03385>      |https://pytorch.org/vision/0.12/generated/torchvision.models.resnet152.html|
+| ConvNeXt | <https://arxiv.org/abs/2201.03545>      |https://pytorch.org/vision/stable/models/convnext.html|
+| ResNeXt | <https://arxiv.org/abs/1611.05431>      |https://pytorch.org/hub/pytorch_vision_resnext/|
+| SE-ResNeXt | <https://arxiv.org/abs/1709.01507v4>      |https://rwightman.github.io/pytorch-image-models/models/seresnext/|
+| Xception | <https://arxiv.org/abs/1610.02357>      |https://rwightman.github.io/pytorch-image-models/models/xception/|
 
 
 
