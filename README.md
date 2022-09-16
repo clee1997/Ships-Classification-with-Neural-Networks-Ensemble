@@ -11,8 +11,13 @@ The strategy chosen was to train different neural network architectures and then
 The dataset can be downloaded with the following command:
 
 ```python
-!gdown -q 1hukMWTFj2aSqx2jBh42R-Y6UXrSw60Nj
+!gdown 1hukMWTFj2aSqx2jBh42R-Y6UXrSw60Nj
 ```
+
+Here are some examples:
+|battleships |coast-guard | containerships|cruise-ships |drilling-rigs |motor-yachts | submarines|
+|:-------------------------:|:-------------------------:|:-------------------------:||:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/297678/29892310-03e92256-8d83-11e7-9b58-986dcb6f702e.png">  blah |
 
 ## Setup
 
@@ -25,7 +30,7 @@ We chose a small batch size equal to 8 in order to reduce the computational time
 ### Models
 
 | Models       | Paper           | Link  |
-| :--------------------------: |:-------------:| :-----:|
+| :-------------------------- |:-------------| :-----|
 | ViT B 16     | <https://arxiv.org/abs/2010.11929> |https://github.com/lukemelas/PyTorch-Pretrained-ViT|
 | Resnet152    | <https://arxiv.org/abs/1512.03385>      |https://pytorch.org/vision/0.12/generated/torchvision.models.resnet152.html|
 | ConvNeXt | <https://arxiv.org/abs/2201.03545>      |https://pytorch.org/vision/stable/models/convnext.html|
