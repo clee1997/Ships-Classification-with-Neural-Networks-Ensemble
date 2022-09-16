@@ -8,6 +8,12 @@ The strategy chosen was to train different neural network architectures and then
 
 ## Dataset
 
+In the original training set there are images out of context that must be removed, this process has already been done by us, in the following csv file only the files and the respective categories of images concerning ships are listed:
+
+```python
+!gdown 1AobspqrM3TYKw3DvWUpsH3GHhCCMMovg
+```
+
 The dataset can be downloaded with the following command:
 
 ```python
@@ -39,6 +45,19 @@ We chose a small batch size equal to 8 in order to reduce the computational time
 | SE-ResNeXt | <https://arxiv.org/abs/1709.01507v4>      |https://rwightman.github.io/pytorch-image-models/models/seresnext/|
 | Xception | <https://arxiv.org/abs/1610.02357>      |https://rwightman.github.io/pytorch-image-models/models/xception/|
 
+### Data Augmentation
 
+Given the low number of training samples and the presence of black and white images, it was essential to normalize the images and apply data augmentation to obtain more. The transformations applied were not overwhelming as we tried to maintain a certain consistency with the test set to better train the model, below are the transformations used:
 
+```python
+input_size = (224, 224)
 
+train_transform = T.Compose([T.Resize(input_size), 
+                              T.ToTensor(), 
+                              T.Normalize(mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5))])
+
+t1 = T.Compose([T.Resize(input_size), 
+                T.RandomHorizontalFlip(p = 1),
+                T.ToTensor(), 
+                T.Normalize(mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5))])
+```
