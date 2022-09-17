@@ -1,6 +1,6 @@
 **To download the pretrained models use the following commands:**
 
-```python
+```
 !gdown 1Fydxv8Jq7dkPguG_wdn3G2ZVOybejjzL # pretrained xception
 !gdown 1B5wHW6jlPVNMq-rq65SPiL4AXDDCnKzN # pretrained vit
 !gdown 1fz93kOaXPf-Y0WF3udv0qt2PhaqPYMnQ # pretrained resnext
