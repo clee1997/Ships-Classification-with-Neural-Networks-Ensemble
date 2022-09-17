@@ -6,7 +6,7 @@
 !gdown 1fz93kOaXPf-Y0WF3udv0qt2PhaqPYMnQ # pretrained resnext
 !gdown 11-nhfpP36MkvzB7sGfZhkgro1nvg3Z5Y # pretrained resnet
 !gdown 1acCkBDUj0KBbsbZmVqVamAbu1rHagr4u # pretrained convnext
-!gdown
+!gdown 1KhRoToqRm-rib4guD0ZdSZnqS2ZjkTO3 # pretrained seresnext
 ```
 
 **Then to load the model in your notebook:**
