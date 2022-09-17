@@ -79,7 +79,7 @@ def get_loaders(path, folder_path, transform, batch_size = 8, num_workers = 2, t
     train_dataset = ShipDataset(folder_path, df_train, transform=transform[0])
     val_dataset = ShipDataset(folder_path, df_val, transform=transform[0])
 
-    aug = ShipDataset(df_train, transform = transform[1])
+    aug = ShipDataset(folder_path, df_train, transform = transform[1])
     train_dataset = torch.utils.data.ConcatDataset([train_dataset, aug]) 
 
     train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size, num_workers=num_workers, shuffle=True, drop_last=True)
