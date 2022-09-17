@@ -37,7 +37,7 @@ We chose a small batch size equal to 8 in order to reduce the computational time
 ### Models
 
 | Models       | Paper           | Link  |
-| :-------------------------- |:-------------| :-----|
+| :-------------------------- |:--------------------------|:--------------------------|
 | ViT B 16     | <https://arxiv.org/abs/2010.11929> |https://github.com/lukemelas/PyTorch-Pretrained-ViT|
 | Resnet152    | <https://arxiv.org/abs/1512.03385>      |https://pytorch.org/vision/0.12/generated/torchvision.models.resnet152.html|
 | ConvNeXt | <https://arxiv.org/abs/2201.03545>      |https://pytorch.org/vision/stable/models/convnext.html|
