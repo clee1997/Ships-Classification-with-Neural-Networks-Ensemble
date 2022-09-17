@@ -107,7 +107,7 @@ def train(model, train_loader, val_loader, path, epochs = 10, optimizer_alg = 'a
 
     cost, optimizer, scheduler = optimizer_setup(model, epochs, optimizer_alg)
 
-    model, train_loss, test_loss = Helper.train(model, train_loader, val_loader, epochs, optimizer, cost, scheduler)
+    model, train_loss, test_loss = Helper.train(model.to(device), train_loader, val_loader, epochs, optimizer, cost, scheduler)
 
     torch.save(model, path)
 
