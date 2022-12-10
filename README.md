@@ -2,6 +2,15 @@
 
 This project was carried out for the [Leonardo Labs Kaggle Competition](https://www.kaggle.com/competitions/sapienza-training-camp-2022/overview) and was able to achieve the 2nd place with a private score of 0.98102. The goal was to classify images of ships according to their type (7 different classes). 
 
+## Friendly Reminder
+
+- If you use or take inspiration from this repository please cite with this link: [santurini/Ships-Classification-with-Neural-Networks-Ensemble](https://github.com/santurini/Ships-Classification-with-Neural-Networks-Ensemble)
+
+Your support will be truly appreciated and feel free to contact me at my following links or just send me an email:
+- [Linkedin](https://www.linkedin.com/in/arturo-ghinassi-50b8a0219/)
+- [Kaggle](https://www.kaggle.com/santurini)
+- ghinassi.1863151@studenti.uniroma1.it
+
 ## Approach
 
 The strategy chosen was to train different neural network architectures and then obtain a single prediction by majority voting. Other strategies that have been adopted include training an ensemble of neural networks after combining the outputs and the use of **Visual Transformers**. 
