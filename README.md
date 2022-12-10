@@ -70,3 +70,11 @@ t1 = T.Compose([T.Resize(input_size),
                 T.ToTensor(), 
                 T.Normalize(mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5))])
 ```
+
+<br />
+<br />
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/50860347/147412786-183da6b0-990f-4016-9f2e-0719d8066f5b.png" style="width: 100%"/>
+<p>
+
+<br />
