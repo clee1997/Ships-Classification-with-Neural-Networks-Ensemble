@@ -4,7 +4,7 @@ This project was carried out for the [Leonardo Labs Kaggle Competition](https://
 
 ## Friendly Reminder
 
-- If you use or take inspiration from this repository please cite with this link: [santurini/Ships-Classification-with-Neural-Networks-Ensemble](https://github.com/santurini/Ships-Classification-with-Neural-Networks-Ensemble)
+If you use or take inspiration from this repository please cite with this link: [santurini/Ships-Classification-with-Neural-Networks-Ensemble](https://github.com/santurini/Ships-Classification-with-Neural-Networks-Ensemble)
 
 Your support will be truly appreciated and feel free to contact me at my following links or just send me an email:
 - [Linkedin](https://www.linkedin.com/in/arturo-ghinassi-50b8a0219/)
